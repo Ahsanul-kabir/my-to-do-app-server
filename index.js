@@ -38,7 +38,7 @@ async function run() {
             res.send(result);
         })
 
-        // POST product : Add a new todo
+        //  Add a new todo
         app.post('/todos', async (req, res) => {
             const newTodo = req.body;
             const result = await toDoCollection.insertOne(newTodo);
